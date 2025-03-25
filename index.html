@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li class="t" id="">Home</li>
+            <li class="t" id="">About</li>
+            <li class="t" id="">Work</li>
+            <li class="t" id="">contact</li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Lavda Lassan Hypothesis</h2>
+        <p>
+
+            The concept of "lavda lassan" could be hypothesized as a metaphorical representation of the intricate balance between seemingly disparate elements in nature. In this context, "lavda" might symbolize the robust and resilient aspects of life, while "lassan" could represent the delicate and nuanced elements. The hypothesis proposes that when these two forces are in harmony, they create a synergy that fosters growth and stability in ecosystems. This balance is crucial for maintaining biodiversity and ensuring that both the robust and delicate components of an ecosystem thrive, leading to a more resilient and vibrant natural world. By studying the dynamics of "lavda lassan," researchers could gain insights into how to manage and preserve complex ecosystems effectively.
+           <br><br> 
+            Further exploration of "lavda lassan" could reveal practical applications in environmental conservation and sustainability. For instance, understanding how robust and delicate elements interact could inform strategies for restoring damaged ecosystems or mitigating the effects of climate change. Additionally, the concept might inspire new approaches to sustainable agriculture, where balancing robust crop yields with delicate soil health could lead to more resilient and productive farming practices. By embracing the principles of "lavda lassan," communities might develop more harmonious relationships with their natural environments, fostering a future where human activities and natural systems coexist in balance and mutual benefit. This holistic approach could ultimately contribute to a healthier planet and more sustainable human societies.
+            <br><br>
+            The study of "lavda lassan" could also have profound implications for human well-being and societal development. By recognizing the interplay between robust and delicate aspects in human systems, policymakers might design more effective social programs that balance economic resilience with social sensitivity. This could lead to more equitable and sustainable economic growth, where robust economic structures support delicate social fabrics. Moreover, understanding "lavda lassan" could inspire new models for education and personal development, emphasizing the importance of balancing resilience with sensitivity in individual growth and community building.
+            <br><br>
+            In addition to its practical applications, the concept of "lavda lassan" might also offer a rich framework for philosophical and cultural exploration. It could serve as a metaphor for the human condition, highlighting the need for individuals to balance their own robust and delicate qualities. This balance is essential for personal growth and fulfillment, as well as for fostering empathetic and resilient communities. By exploring "lavda lassan" through art, literature, and cultural narratives, societies might deepen their understanding of the intricate relationships between different aspects of human experience, leading to a more nuanced and compassionate worldview.
+            <br><br>
+            Lastly, the exploration of "lavda lassan" could be a catalyst for interdisciplinary collaboration and innovation. By bringing together experts from ecology, sociology, economics, and philosophy, researchers could develop a comprehensive understanding of how robust and delicate elements interact across different systems. This interdisciplinary approach could lead to breakthroughs in fields such as environmental engineering, social policy, and cultural studies. Ultimately, the study of "lavda lassan" might inspire a new era of holistic thinking, where diverse disciplines converge to address the complex challenges facing our world and to create a more sustainable and harmonious future for all.
+            
+        </p>
+    </div>
+    <script>
+        let stars=document.getElementById('stars');
+        let moon=document.getElementById('moon');
+        let mountains_behind =document.getElementById('mountains_behind');
+        let text=document.getElementById('text');
+        let  btn =document.getElementById('btn');
+        let mountains_front =document.getElementById('mountains_front');
+        let header=document.querySelector('header')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY
+            stars.style.left=value*0.25+'px';
+            moon.style.top=value*1.05 +'px';
+            mountains_behind.style.top= value*0.5 +'px';
+            mountains_front.style.top= value*0 +'px';
+            text.style.marginRight= value*4 +'px';
+            text.style.marginTop= value*1.5 +'px';
+            btn.style.marginTop= value*1.5 +'px';
+            header.style.top=value*0.5 +'px';
+            
+        })
+    </script>
+</body>
+</html>

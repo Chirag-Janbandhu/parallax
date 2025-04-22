@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li class="t" id="">Home</li>
+            <li class="t" id="">About</li>
+            <li class="t" id="">Work</li>
+            <li class="t" id="">contact</li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2> Hypothesis</h2>
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur, debitis dignissimos itaque rem maxime. Nostrum tenetur iste illum labore animi quae qui tempora illo quas molestiae, at commodi non?
+    Fuga, laudantium. Iusto in magnam ex magni atque hic, ea esse nemo quisquam ipsam perferendis, pariatur excepturi culpa deserunt sed sit! Tenetur rem similique laborum minima vitae eum beatae dignissimos!
+    Libero omnis eos dicta possimus quam quidem consequuntur saepe error sunt ad illum
+           <br><br> 
+            liquid eligendi rerum harum aliquam et consequuntur possimus sequi sint fugit doloribus ad laboriosam voluptate. Unde a saepe doloribus et, dolorem quis totam.
+    Ipsum at rem consequatur mollitia ratione repellendus fuga doloribus eos cumque veniam natus, quasi commodi vero tempore, fugiat eaque adipisci error ullam fugit ad accusamus, voluptas officia! Aliquid, minima sit.
+    Iure ut recusandae expedita ad atque soluta incidunt. Quam ullam quas sunt voluptates laborum aliquid. Similique nobis quae ut, blanditiis dolore vero eaque voluptatem rerum magnam corporis quaerat, adipisci provident?
+    Tenetur sequi maxime suscipit itaque explicabo quam accusantium repudiandae porro? Totam ratione autem ullam expedita. Accusantium animi odit commodi tempora magnam iure recusandae cupiditate, quas pariatur. Iste architecto vitae blanditiis.
+    Dolor ut, in assumenda nemo ad incidunt, sit distinctio
+            <br><br>
+            vitae id! Officiis libero veniam suscipit rerum, sit, modi, reprehenderit beatae ex ipsam corrupti maxime sapiente. Esse illum quo eligendi quae reprehenderit corrupti natus dolores.
+    Inventore facere accusantium a omnis, ut quos repellendus deleniti sunt voluptatum ipsa nulla at repellat, impedit quidem quod voluptas iusto autem sint amet. Ad corporis alias eaque, a natus facere.
+    Excepturi quibusdam molestias ratione error, eveniet sunt placeat unde asperiores sapiente dolore blanditiis quisquam. Repellendus quasi, facere nam quisquam officiis inventore, est impedit natus libero, ex quas. Atque, aliquam incidunt.
+    Magnam debitis fuga suscipit. Aliquid quos libero blanditiis
+            In addition to its practical applications, the concept of  might also offer a rich framework for philosophical and cultural exploration. It could serve as a metaphor for the human condition, highlighting the need for individuals to balance their own robust and delicate qualities. This balance is essential for personal growth and fulfillment, as well as for fostering empathetic and resilient communities. By exploring "lavda lassan" through art, literature, and cultural narratives, societies might deepen their understanding of the intricate relationships between different aspects of human experience, leading to a more nuanced and compassionate worldview.
+            <br><br>
+            Lastly, the exploration ofcould be a catalyst for interdisciplinary collaboration and innovation. By bringing together experts from ecology, sociology, economics, and philosophy, researchers could develop a comprehensive understanding of how robust and delicate elements interact across different systems. This interdisciplinary approach could lead to breakthroughs in fields such as environmental engineering, social policy, and cultural studies. Ultimately, the study of might inspire a new era of holistic thinking, where diverse disciplines converge to address the complex challenges facing our world and to create a more sustainable and harmonious future for all.
+            
+        </p>
+    </div>
+    <script>
+        let stars=document.getElementById('stars');
+        let moon=document.getElementById('moon');
+        let mountains_behind =document.getElementById('mountains_behind');
+        let text=document.getElementById('text');
+        let  btn =document.getElementById('btn');
+        let mountains_front =document.getElementById('mountains_front');
+        let header=document.querySelector('header')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY
+            stars.style.left=value*0.25+'px';
+            moon.style.top=value*1.05 +'px';
+            mountains_behind.style.top= value*0.5 +'px';
+            mountains_front.style.top= value*0 +'px';
+            text.style.marginRight= value*4 +'px';
+            text.style.marginTop= value*1.5 +'px';
+            btn.style.marginTop= value*1.5 +'px';
+            header.style.top=value*0.5 +'px';
+            
+        })
+    </script>
+</body>
+</html>
